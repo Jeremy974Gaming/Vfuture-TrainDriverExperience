@@ -1,0 +1,137 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Orbitron', sans-serif;
+  overflow: hidden;
+  background: black;
+  color: white;
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.passport-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.passport-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  border: 2px solid #0ff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #0ff;
+  text-align: center;
+}
+
+.passport-title {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #0ff;
+}
+.tde-info {
+  font-size: 1.5em;
+  color: #0ff;
+}
+
+.passport-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.passport-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 2em;
+  border: 2px solid #0ff;
+}
+
+.passport-data p span {
+  color: #0ff;
+}
+
+.company-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300vh;
+}
+.info-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  border: 2px solid #0ff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #0ff;
+  text-align: center;
+}
+
+.copyright-tde {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 2em;
+}
+
+.cright-tde p span {
+  color: #0ff;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background: #0ff;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .passport-overlay {
+    width: 90%;
+    font-size: 0.9em;
+  }
+
+  .passport-info {
+    flex-direction: column;
+  }
+
+  .passport-info img {
+    margin-bottom: 1em;
+  }
+}
+
+#passport-container {
+  transition: transform 0.6s ease-in-out;
+}
+
+.page-flip {
+  transform: rotateY(180deg);
+}
+
+#webgl-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+@keyframes glow {
+  from { text-shadow: 0 0 5px #00ffff; }
+  to { text-shadow: 0 0 20px #00ffff; }
+}
