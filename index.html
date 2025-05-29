@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Passport</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="scanlines">
+  <div id="webgl-bg"></div>
+  <div class="passport-container">
+    <video autoplay muted loop id="background-video">
+      <source src="assets/videos/nightcity_traincab.mp4" type="video/mp4">
+    </video>
+
+    <audio autoplay loop id="ambiance-audio">
+      <source src="assets/audio/train_nightcity_ambiance.mp3" type="audio/mpeg">
+    </audio>
+    <audio autoplay loop id="electric-hum">
+      <source src="assets/audio/electric_hum_loop.mp3" type="audio/mpeg">
+    </audio>
+    <audio autoplay loop id="announcer">
+      <source src="assets/audio/conductor_announcement.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="passport-overlay">
+      <h1 class="passport-title">VFuture Production Passport</h1>
+      <h2 class="tde-info">TrainDriverExperience 1.0.0</h2>
+      <div class="passport-info">
+        <img src="assets/images/profile1.png" alt="Profile" id="profile-pic">
+        <div class="passport-data">
+          <p>Name: <span id="name">Sumire Kawatsuga</span></p>
+          <p>ABOUT.md=> <span id="about"><br>I am Sumire Kawatsuga, a blue haired bean hailing from a planet far far away. <br>On my world I am known as Empress Kawatsuga the First of the Ceph Democratic Collective. <br>I am a VTuber, indie game developer, and Programmer. I have been developing software tool chains, <br>game launchers, game modifications, and bots since I was 8. <br>I am currently over 1 billion years old but I still feel young and energetic.</span></p>
+          <p>BIO_INFO.md=><span id="more"> SPECIES>CEPH, TYPE>ALPHA<br>CLASS> ROYAL_FAMILY, ID>2, ROLE>EMPRESS </span></p>
+          <p>VFC_PASS_ID=> <span id="code">NCX-2045-77A/VFC2850128</span></p>
+            <p>MR_LINE=> <span id="mrline">CDC56..2..S.KAWATSUGA..8502894..56840..09104853..NCX204577A..VFC..285..0128..4900293</span></p>
+          <p>Origin: <span id="origin">Kanda-Ward, Cephyzor, Earth-8B</span></p>
+          <p>著作権<span id="cright">2025 VFuture SAすべての権利は留保されていますこ著作権法（昭和45年5月6日法律第48号）<br>著作権法、人格権、隣接権、著作権等管理事業法に準拠して作成したものです。</span></p>
+           <p>著作権<span id="ipinfo">中村花子このIPの所有者<br>この知的財産基本法（平成１５年３月１日施行）の翻訳は <br>「法令用語日英標準対訳辞、
+書 （平成１８年３月版）に準拠して作成したものです。</span></p>
+        </div>
+      </div>
+          <button onclick="switchImage()">Alternate Photo</button>
+      <button onclick="switchTalent()">Next Page</button>
+      <button onclick="toggleAudio()" id="audio-toggle">Mute Audio</button>
+      <button onclick="toggleVideo()" id="audio-toggle">Play/Pause Video</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
+  <script src="script.js"></script>
+  <div class="company-container">
+      <div class="info-overlay">
+              <div class="copyright-tde">
+        <p>著作権<span id="crighttde">TrainDriverExperience、川栂スミレは 2025年のVFuture SAすべての権利は留保されていますこ著作権法<br>（昭和45年5月6日法律第48号）著作権法、人格権、隣接権、著作権等管理事業法に準拠して作成したものです。<br>対象国は、日本、アメリカ合衆国、カナダ、オーストラリア、ニュージーランド、中華人民共和国、韓国、<br>イギリス、スイス、EU27、アイスランド、リヒステンシュタインです。</span></p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
